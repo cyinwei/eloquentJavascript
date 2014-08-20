@@ -1,3 +1,23 @@
+/* Thoughts
+  Pointers!!!...!  *___*
+  
+  Javascript
+    We check if a property exists in an object by looking at its value and seeing if its defined or not
+    Ex:
+
+    var obj = {}
+    if (obj.property == undefined) //it doesn't exist
+
+  Prepend linked lists...
+    I'm not exactly sure if my prepend function works correctly, but I think it does...
+    Might want to reimplement it using prepend instead of push
+
+  Also don't need that many lines for push()...
+
+*/
+
+
+
 function push(list, value) { 
   
   //check for an empty list

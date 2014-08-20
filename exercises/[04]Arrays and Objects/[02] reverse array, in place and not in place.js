@@ -1,11 +1,6 @@
-/*
-  @author: Yinwei (Charlie) Zhang
-*/
-
-
 function reverseArray(array) {
   //produces an array reversed out, with a stack :)
-  //wtf, javascript passes objects BY REFERENCE !!!
+  //wtf, javascript passes objects BY REFERENCE !!! (aka copy reference...)
   var tempArray = array;
   var returnArray = [];
   while (tempArray.length > 0) {
@@ -52,6 +47,9 @@ function reverseArrayInPlace(array) {
     arrays if we ignore the keystones.
     
   */
+  // Note the number of swaps is the same whether is odd or even, with 
+  // n as even and n+1 as odd, so we can just floor it
+
   var midpointIndex = Math.floor(array.length / 2);
   
   for (var index = 0; index <= midpointIndex; index++) {
